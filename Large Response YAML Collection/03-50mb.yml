@@ -1,0 +1,11 @@
+info:
+  name: 50 MB Response 1
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: https://postman-echo.com/bytes/50/mb?type=json
+
+settings:
+  encodeUrl: true

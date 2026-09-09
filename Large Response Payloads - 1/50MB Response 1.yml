@@ -1,0 +1,20 @@
+info:
+  name: 50MB Response 1
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: https://ash-speed.hetzner.com/100MB.bin
+  headers:
+    - name: Range
+      value: bytes=0-52428799
+    - name: Accept-Encoding
+      value: identity
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
